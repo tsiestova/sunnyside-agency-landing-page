@@ -49,16 +49,28 @@
   }
 
   &.bg__pic__graphic {
-    background: url(./assets/mobile/image-graphic-design.jpg) no-repeat top
+    background: url(./assets/desktop/image-graphic-design.jpg) no-repeat top
       center;
     background-size: cover;
     padding-top: 398px;
+
+    //@include breakpoint(tablet) {
+    //  background: url(./assets/desktop/image-graphic-design.jpg) no-repeat top
+    //    center;
+    //  background-size: cover;
+    //}
   }
 
   &.bg__pic__photography {
-    background: url(./assets/mobile/image-photography.jpg) no-repeat top center;
+    background: url(./assets/desktop/image-photography.jpg) no-repeat top center;
     background-size: cover;
     padding-top: 398px;
+
+    //@include breakpoint(tablet) {
+    //  background: url(./assets/desktop/image-photography.jpg) no-repeat top
+    //    center;
+    //  background-size: cover;
+    //}
   }
 }
 

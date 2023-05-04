@@ -15,7 +15,7 @@
     z-index: -1;
   }
 
-  @include breakpoint(tablet) {
+  @media (min-width: 500px) {
     &:before {
       background: #4abdf2 url(./assets/desktop/header-img.png) no-repeat bottom
         center;
