@@ -1,13 +1,18 @@
 .modal {
   position: fixed;
   font-size: 20px;
-  padding: 63px 0 39px;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
-  margin: 100px auto;
+  margin: 106px auto;
   border: none;
+  background: transparent;
+
+  .modal__menu__list {
+    background: white;
+    padding: 63px 0 39px;
+  }
 
   &:before {
     content: "";
@@ -15,9 +20,9 @@
     height: 0;
 
     position: absolute;
-    border-left: 80px solid transparent;
-    border-right: 0px solid transparent;
-    border-bottom: 80px solid black;
+    border-left: 24px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 24px solid black;
     right: 0;
     top: -14px;
   }
