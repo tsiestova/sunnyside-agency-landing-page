@@ -11,12 +11,15 @@
 
   &:before {
     content: "";
+    width: 0;
+    height: 0;
+
     position: absolute;
-    width: 24px;
-    height: 24px;
+    border-left: 80px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 80px solid black;
     right: 0;
-    top: 0;
-    background: white;
+    top: -14px;
   }
 }
 
