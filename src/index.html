@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Workit landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="layout">
+        <div class="header__top__box">
+          <a class="header__logo">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <button type="button" class="burger__menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <nav class="header__menu__list">
+            <li class="header__nav__item"><a href="#">About</a></li>
+            <li class="header__nav__item"><a href="#">Services</a></li>
+            <li class="header__nav__item"><a href="#">Projects</a></li>
+            <li class="header__nav__item nav__item_contact">
+              <a href="#">Contact</a>
+            </li>
+
+            <!--            <img src="./assets/icon-hamburger.svg" alt="">-->
+          </nav>
+        </div>
+        <div class="header__heading">We are creatives</div>
+      </div>
+    </header>
+
+    <div class="gallery__section">
+      <ul class="gallery__list">
+        <li class="gallery__item gallery__item__pic">
+          <picture class="gallery__item__pic_wrap">
+            <source
+              media="(min-width:900px)"
+              srcset="./assets/desktop/image-transform.jpg"
+            />
+            <source
+              media="(min-width:601px)"
+              srcset="./assets/mobile/image-transform.jpg"
+            />
+            <img
+              src="./assets/mobile/image-transform.jpg"
+              alt="image stand-out"
+            />
+          </picture>
+        </li>
+        <li class="gallery__item gallery__item__text_block">
+          <div class="layout">
+            <div class="item__heading">Transform your brand</div>
+            <div class="item__description">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </div>
+            <a class="item__link" href="">Learn more</a>
+          </div>
+        </li>
+        <li class="gallery__item gallery__item__pic">
+          <picture class="gallery__item__pic_wrap">
+            <source
+              media="(min-width:900px)"
+              srcset="./assets/desktop/image-stand-out.jpg"
+            />
+            <source
+              media="(min-width:601px)"
+              srcset="./assets/mobile/image-stand-out.jpg"
+            />
+            <img
+              src="./assets/mobile/image-stand-out.jpg"
+              alt="image stand-out"
+            />
+          </picture>
+        </li>
+        <li class="gallery__item gallery__item__text_block">
+          <div class="layout">
+            <div class="item__heading">Stand out to the right audience</div>
+            <div class="item__description">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </div>
+            <a class="item__link" href="">Learn more</a>
+          </div>
+        </li>
+        <li class="gallery__item gallery__item__pic bg__pic bg__pic__graphic">
+          <!--            <picture class="gallery__item__pic_wrap">-->
+          <!--              <source-->
+          <!--                      media="(min-width:900px)"-->
+          <!--                      srcset="./assets/desktop/image-graphic-design.jpg"-->
+          <!--              />-->
+          <!--              <source-->
+          <!--                      media="(min-width:601px)"-->
+          <!--                      srcset="./assets/mobile/image-graphic-design.jpg"-->
+          <!--              />-->
+          <!--              <img-->
+          <!--                      src="./assets/mobile/image-graphic-design.jpg"-->
+          <!--                      alt="image stand-out"-->
+          <!--              />-->
+          <!--            </picture>-->
+          <div class="gallery__item__text_wrap">
+            <div class="layout">
+              <div class="gallery__item__heading">Graphic Design</div>
+              <div class="gallery__item__text">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="gallery__item gallery__item__pic bg__pic bg__pic__photography"
+        >
+          <!--            <picture class="gallery__item__pic_wrap">-->
+          <!--              <source-->
+          <!--                      media="(min-width:900px)"-->
+          <!--                      srcset="./assets/desktop/image-photography.jpg"-->
+          <!--              />-->
+          <!--              <source-->
+          <!--                      media="(min-width:601px)"-->
+          <!--                      srcset="./assets/mobile/image-photography.jpg"-->
+          <!--              />-->
+          <!--              <img-->
+          <!--                      src="./assets/mobile/image-photography.jpg"-->
+          <!--                      alt="image stand-out"-->
+          <!--              />-->
+          <!--            </picture>-->
+          <div class="gallery__item__text_wrap">
+            <div class="layout">
+              <div class="gallery__item__heading">Photography</div>
+              <div class="gallery__item__text">
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <section class="section__testimonials">
+      <div class="layout">
+        <h1 class="section__testimonials__heading">CLIENT TESTIMONIALS</h1>
+        <ul class="client__list">
+          <li class="client__item">
+            <figure class="client__pic">
+              <img src="./assets/image-emily.jpg" alt="" />
+            </figure>
+            <div class="client__item__description">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </div>
+            <div class="client__item__name">Emily R.</div>
+            <div class="client__item__position">Marketing Director</div>
+          </li>
+          <li class="client__item">
+            <figure class="client__pic">
+              <img src="./assets/image-thomas.jpg" alt="" />
+            </figure>
+            <div class="client__item__description">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </div>
+            <div class="client__item__name">Thomas S.</div>
+            <div class="client__item__position">Chief Operating Officer</div>
+          </li>
+          <li class="client__item">
+            <figure class="client__pic">
+              <img src="./assets/image-jennie.jpg" alt="" />
+            </figure>
+            <div class="client__item__description">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </div>
+            <div class="client__item__name">Jennie F.</div>
+            <div class="client__item__position">Business Owner</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <ul class="bottom__gallery__list">
+      <li class="bottom__gallery__item">
+        <picture class="gallery__item__pic_wrap">
+          <source
+            media="(min-width:900px)"
+            srcset="./assets/desktop/image-gallery-milkbottles.jpg"
+          />
+          <source
+            media="(min-width:601px)"
+            srcset="./assets/mobile/image-gallery-milkbottles.jpg"
+          />
+          <img
+            src="./assets/mobile/image-gallery-milkbottles.jpg"
+            alt="image stand-out"
+          />
+        </picture>
+      </li>
+      <li class="bottom__gallery__item">
+        <picture class="gallery__item__pic_wrap">
+          <source
+            media="(min-width:900px)"
+            srcset="./assets/desktop/image-gallery-orange.jpg"
+          />
+          <source
+            media="(min-width:601px)"
+            srcset="./assets/mobile/image-gallery-orange.jpg"
+          />
+          <img
+            src="./assets/mobile/image-gallery-orange.jpg"
+            alt="image stand-out"
+          />
+        </picture>
+      </li>
+      <li class="bottom__gallery__item">
+        <picture class="gallery__item__pic_wrap">
+          <source
+            media="(min-width:900px)"
+            srcset="./assets/desktop/image-gallery-cone.jpg"
+          />
+          <source
+            media="(min-width:601px)"
+            srcset="./assets/mobile/image-gallery-cone.jpg"
+          />
+          <img
+            src="./assets/mobile/image-gallery-cone.jpg"
+            alt="image stand-out"
+          />
+        </picture>
+      </li>
+      <li class="bottom__gallery__item">
+        <picture class="gallery__item__pic_wrap">
+          <source
+            media="(min-width:900px)"
+            srcset="./assets/desktop/image-gallery-sugarcubes.jpg"
+          />
+          <source
+            media="(min-width:601px)"
+            srcset="./assets/mobile/image-gallery-sugar-cubes.jpg"
+          />
+          <img
+            src="./assets/mobile/image-gallery-sugar-cubes.jpg"
+            alt="image stand-out"
+          />
+        </picture>
+      </li>
+    </ul>
+
+    <footer class="footer">
+      <div class="layout">
+        <figure class="footer__logo">
+          <img src="./assets/sunnyside.png" alt="" />
+        </figure>
+        <nav class="nav__list">
+          <a href="#" class="nav__item">About</a>
+          <a href="#" class="nav__item">Services</a>
+          <a href="#" class="nav__item">Projects</a>
+        </nav>
+        <ul class="social__media__list">
+          <li class="social__media__item social__media__item_facebook"></li>
+          <li class="social__media__item social__media__item_insta"></li>
+          <li class="social__media__item social__media__item_twitter"></li>
+          <li class="social__media__item social__media__item_pinterest"></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
