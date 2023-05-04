@@ -1,6 +1,23 @@
-[data-modal] {
+.modal {
+  position: fixed;
   font-size: 20px;
   padding: 63px 0 39px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 100px auto;
+  border: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 0;
+    top: 0;
+    background: white;
+  }
 }
 
 dialog::backdrop {
