@@ -58,23 +58,19 @@ dialog::backdrop {
 }
 
 .modal[open] {
-  animation: show 1s ease forwards;
+  animation: show 200ms ease forwards;
 }
 
 .modal[open]::backdrop {
-  animation: backdrop 1s ease forwards;
+  animation: backdrop 200mss ease forwards;
 }
 
 .modal {
-  &::backdrop {
-    //transition: opacity 5s;
-  }
   &.close {
-    animation: hideModal 2s ease forwards;
+    animation: hideModal 150ms ease forwards;
 
     &::backdrop {
-      //opacity: 0;
-      animation: hideBackdrop 2s ease;
+      animation: hideBackdrop 150ms ease;
     }
   }
 }
