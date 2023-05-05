@@ -62,7 +62,7 @@ dialog::backdrop {
 }
 
 .modal[open]::backdrop {
-  animation: backdrop 200mss ease forwards;
+  animation: backdrop 200ms ease forwards;
 }
 
 .modal {
