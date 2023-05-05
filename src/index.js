@@ -17,7 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
       e.clientY < dialogDimentions.top ||
       e.clientY > dialogDimentions.bottom
     ) {
+      modal.classList.add("close");
+    }
+  });
+
+  modal.addEventListener("animationend", () => {
+    if (modal.classList.contains("close")) {
       modal.close();
+      modal.classList.remove("close");
     }
   });
 });

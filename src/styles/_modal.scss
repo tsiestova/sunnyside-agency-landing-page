@@ -12,24 +12,24 @@
   .modal__menu__list {
     background: white;
     padding: 63px 0 39px;
+    margin-top: 24px;
   }
 
   &:before {
     content: "";
-    width: 0;
-    height: 0;
+    width: 24px;
+    height: 24px;
 
     position: absolute;
     border-left: 24px solid transparent;
-    border-right: 0 solid transparent;
-    border-bottom: 24px solid black;
+    border-bottom: 24px solid white;
     right: 0;
-    top: -14px;
+    top: 0;
   }
 }
 
 dialog::backdrop {
-  background-color: grey;
+  background-color: black;
   opacity: 50%;
 }
 
@@ -54,5 +54,77 @@ dialog::backdrop {
     font-family: $font1;
     letter-spacing: -0.128571px;
     padding: 0 50px;
+  }
+}
+
+.modal[open] {
+  animation: show 1s ease forwards;
+}
+
+.modal[open]::backdrop {
+  animation: backdrop 1s ease forwards;
+}
+
+.modal {
+  &::backdrop {
+    //transition: opacity 5s;
+  }
+  &.close {
+    animation: hideModal 2s ease forwards;
+
+    &::backdrop {
+      //opacity: 0;
+      animation: hideBackdrop 2s ease;
+    }
+  }
+}
+
+@keyframes hideModal {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes show {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes backdrop {
+  from {
+    background: transparent;
+  }
+  to {
+    background: rgba(0, 0, 0);
+  }
+}
+
+@keyframes hideBackdrop {
+  0% {
+    opacity: 50%;
+  }
+  20% {
+    opacity: 30%;
+  }
+  30% {
+    opacity: 20%;
+  }
+  60% {
+    opacity: 10%;
+  }
+
+  80% {
+    opacity: 5%;
+  }
+  100% {
+    opacity: 0;
   }
 }
