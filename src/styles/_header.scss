@@ -36,25 +36,6 @@
     color: white;
     background: #4abdf2;
   }
-  //&:before {
-  //  content: "";
-  //  height: 2px;
-  //  width: 24px;
-  //  background: #ffffff;
-  //  position: absolute;
-  //  top: 0;
-  //  right: 0;
-  //}
-  //
-  //&:after {
-  //  content: "";
-  //  height: 2px;
-  //  width: 24px;
-  //  background: #ffffff;
-  //  position: absolute;
-  //  top: 0;
-  //  right: 0;
-  //}
 }
 
 .header__top__box {
@@ -78,6 +59,12 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+
+  &:hover {
+    @include breakpoint(desktop) {
+      cursor: pointer;
+    }
   }
 }
 
@@ -148,17 +135,6 @@
       }
     }
   }
-  //> a {
-  //  @include breakpoint(desktop) {
-  //    font-weight: 700;
-  //    font-size: 15px;
-  //    line-height: 25px;
-  //    font-family: $font2;
-  //    letter-spacing: -0.107143px;
-  //    text-transform: uppercase;
-  //    color: #24303e;
-  //  }
-  //}
 }
 
 .header__menu {
